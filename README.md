@@ -8,7 +8,7 @@ Steps to Install Ansible Operator
 git clone https://github.com/arunvel1988/k8s-operator-ansible-demo
 
 
-2)  cd k8s-operator-ansible-demo
+2)  cd k8s-operator-ansible-demo/demo
 
 3) kubectl create -f deploy/rbac.yaml
 
