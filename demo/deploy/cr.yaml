@@ -1,0 +1,7 @@
+apiVersion: "app.example.com/v1alpha1"
+kind: "Demo"
+metadata:
+  name: "example"
+spec:
+  size: 3
+  image: arunvel1988/cdac

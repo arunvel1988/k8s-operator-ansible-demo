@@ -1,0 +1,5 @@
+---
+# defaults file for application
+state: present
+size: 2
+image: arunvel1988/c1

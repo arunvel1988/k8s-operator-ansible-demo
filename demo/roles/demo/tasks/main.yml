@@ -1,0 +1,14 @@
+---
+- name: start  application deployment to "{{ state }}"
+  k8s:
+   state: "{{ state }}"
+   definition: "{{ lookup('template', 'deployment.yaml') | from_yaml }}"
+   namespace: "{{ meta.namespace }}"
+
+- name: start application service to "{{ state }}"
+  k8s:
+   state: "{{ state }}"
+   definition: "{{ lookup('template', 'service.yaml') | from_yaml }}"
+   namespace: "{{ meta.namespace }}"
+
+
